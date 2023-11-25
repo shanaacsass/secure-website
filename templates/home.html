@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jovian careers</title>
+    <style>
+      h1{
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb(0, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>{{company_name}}</h1>
+      Hello there, you'll learn about the job opening 
+      <img src="https://encrypt-decrypt--developeracs225.repl.co/static/banner.jpg" height="320">
+      <h1> About Jovian</h1>
+      <p>
+        {% for job in jobs %}
+           {% include 'jobitem.html' %}
+            
+        {% endfor %}
+      </p>
+    </div>
+    
+  </body>
+</html>
